@@ -41,6 +41,14 @@ import dias7 from "@/assets/dias-7.jpg.asset.json";
 import dias8 from "@/assets/dias-8.jpg.asset.json";
 import dias9 from "@/assets/dias-9.jpg.asset.json";
 import dias10 from "@/assets/dias-10.jpg.asset.json";
+import paraSempre1 from "@/assets/para-sempre-1.jpg.asset.json";
+import paraSempre2 from "@/assets/para-sempre-2.jpg.asset.json";
+import paraSempre3 from "@/assets/para-sempre-3.jpg.asset.json";
+import paraSempre4 from "@/assets/para-sempre-4.jpg.asset.json";
+import paraSempre5 from "@/assets/para-sempre-5.jpg.asset.json";
+import paraSempre6 from "@/assets/para-sempre-6.jpg.asset.json";
+import paraSempre7 from "@/assets/para-sempre-7.jpg.asset.json";
+import paraSempre8 from "@/assets/para-sempre-8.jpg.asset.json";
 
 export const couple = {
   name1: "Gabriel",
@@ -111,7 +119,16 @@ export const timeline: TimelineItem[] = [
     date: "",
     description:
       "Aqui está um pouco da nossa história e dos momentos que construímos juntos. O restante é um quadro em branco, concorda comigo? Queria deixar com você este registro sobre nós, algo para você olhar sempre que quiser. Eu poderia tentar adivinhar o amanhã, mas prefiro te entregar o nosso presente. Quanto ao futuro... o que será que nós iremos escrever nele?",
-    photos: [moment2, moment3, moment1],
+    photos: [
+      paraSempre1.url,
+      paraSempre2.url,
+      paraSempre3.url,
+      paraSempre4.url,
+      paraSempre5.url,
+      paraSempre6.url,
+      paraSempre7.url,
+      paraSempre8.url,
+    ],
   },
 ];
 
@@ -216,13 +233,11 @@ export const songs: Song[] = [
 ];
 
 export const secrets: string[] = [
-  "Você é a melhor parte de todos os meus dias. ❤️",
-  "Lembra daquela noite na varanda? Eu queria que durasse para sempre.",
-  "Seu sorriso é literalmente meu lugar favorito no mundo.",
-  "Eu te amo mais do que ontem, menos do que amanhã.",
-  "Mesmo nos dias bagunçados, te escolher é sempre a coisa mais fácil.",
-  "Você faz café da manhã virar momento sagrado.",
-  "Obrigado por existir do jeitinho que você existe.",
-  "Spoiler: eu nunca vou cansar de você.",
-  "Você é minha pessoa. Sempre.",
+  "Uma das frases que eu mais amo é: \"Eu prefiro me afogar no profundo do que morrer sufocado pelo raso\". Ela me representa muito, porque sempre fui uma pessoa que não tem medo de demonstrar o que sente.",
+  "Eu amo te ver dormindo. Você é uma pessoa tão forte, mas, quando dorme do meu lado, é o momento em que você repousa em mim. Amo cuidar de você nesses momentos: te ajeitar na cama, te cobrir, te fazer carinho... É quando sinto que realmente estou cuidando de você. E, além disso, amo o fato de você falar coisas nada a ver enquanto dorme.",
+  "Eu não ligo para presentes para mim, mas me tornei viciado em te dar presentes porque amo o seu sorriso e a sua animação nos momentos em que recebe algo novo.",
+  "Sou uma pessoa muito melancólica. Digo isso porque só consigo escrever poesias quando estou passando por momentos difíceis. As minhas melhores poesias sempre foram falando sobre o fim, sobre a saudade, e nunca sobre o amor. Por isso escrevi cartas para você e não poesias: porque estou feliz, e é bem mais difícil escrever sobre momentos felizes.",
+  "Quando eu escolhi as nossas alianças, mesmo sabendo o seu número, eu falei com a Bia para me ajudar e \"roubar\" um anel seu para eu levar de exemplo. Talvez você nem saiba disso até agora.",
+  "Antes de te pedir em namoro aqui em casa, a minha intenção era fazer o pedido junto com toda a sua família, porque sei o quanto eles são importantes para você. No dia, eu levei o buquê e as alianças, e cheguei a falar com a sua mãe para me ajudar, mas na hora todo mundo foi dormir e não consegui realizar o plano. Acabou que pedi só com você por perto. E outra curiosidade: aquele buquê de flores que te entreguei quando você foi promovida, na verdade, fazia parte do combo para o pedido de namoro. Como aquela primeira tentativa não deu certo, decidi guardá-lo para te presentear e celebrar a sua promoção.",
+  "Sempre que você dorme comigo, eu tiro uma foto sua; tenho várias assim. E não sei se você se lembra, mas eu tenho um álbum no Drive só para colocar fotos suas.",
 ];

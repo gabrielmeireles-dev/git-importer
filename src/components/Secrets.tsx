@@ -30,7 +30,7 @@ export function Secrets() {
 
         <div
           ref={ref}
-          className={`reveal ${visible ? "reveal-in" : ""} mx-auto mt-16 grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3`}
+          className={`reveal ${visible ? "reveal-in" : ""} mx-auto mt-16 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 xl:grid-cols-3`}
         >
           {secrets.map((message, i) => {
             const Icon = ICONS[i % ICONS.length];
@@ -39,7 +39,7 @@ export function Secrets() {
               <button
                 key={i}
                 onClick={() => toggle(i)}
-                className="group relative aspect-[4/5] [perspective:1200px]"
+                className="group relative min-h-[360px] text-left [perspective:1200px]"
                 aria-label={`Abrir segredo ${i + 1}`}
               >
                 <div
@@ -58,8 +58,8 @@ export function Secrets() {
                     <span className="text-[11px] text-muted-foreground">toque para abrir</span>
                   </div>
                   {/* back */}
-                  <div className="absolute inset-0 flex items-center justify-center rounded-3xl border border-rose/40 bg-card p-5 text-center shadow-[var(--shadow-soft)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                    <p className="font-display text-lg leading-snug text-foreground sm:text-xl">
+                  <div className="absolute inset-0 flex items-center justify-center rounded-3xl border border-rose/40 bg-card p-6 text-center shadow-[var(--shadow-soft)] [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                    <p className="text-sm leading-relaxed text-foreground sm:text-base">
                       {message}
                     </p>
                   </div>
