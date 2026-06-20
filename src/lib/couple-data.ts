@@ -48,6 +48,13 @@ import viagem7 from "@/assets/viagem-7.jpg.asset.json";
 import viagem8 from "@/assets/viagem-8.jpg.asset.json";
 import viagem9 from "@/assets/viagem-9.jpg.asset.json";
 import viagem10 from "@/assets/viagem-10.jpg.asset.json";
+import pedido1 from "@/assets/pedido-1.mp4.asset.json";
+import pedido2 from "@/assets/pedido-2.jpg.asset.json";
+import pedido3 from "@/assets/pedido-3.jpg.asset.json";
+import pedido4 from "@/assets/pedido-4.jpg.asset.json";
+import pedido5 from "@/assets/pedido-5.jpg.asset.json";
+import pedido6 from "@/assets/pedido-6.jpg.asset.json";
+import pedido7 from "@/assets/pedido-7.jpg.asset.json";
 import dias8 from "@/assets/dias-8.jpg.asset.json";
 import dias9 from "@/assets/dias-9.jpg.asset.json";
 import dias10 from "@/assets/dias-10.jpg.asset.json";
@@ -115,7 +122,7 @@ export const timeline: TimelineItem[] = [
     date: "",
     description:
       "Para mim, sempre esteve claro que eu queria você. Mas eu tinha medo e, para ser sincero, até hoje tenho. Medo de não ser bom o suficiente, de não ser o cara ideal para ti, e medo de que as nossas expectativas fossem diferentes. Mas, com o tempo, o que eu sentia se tornou inevitável. Hoje, a primeira coisa que faço ao acordar é olhar o celular para ver se tem um 'bom dia' seu; se não tem, eu corro para te mandar um. Sinto uma vontade enorme de te contar cada detalhe da minha rotina, e espero ansiosamente para saber como foi o seu dia. Aos poucos, você virou a pessoa que acolhe as minhas maiores inseguranças. Os meus pensamentos mais profundos eu só queria dividir contigo. Ficou claro que você já fazia parte da minha vida, e que era você quem eu queria. Antes mesmo das alianças, comprei aquele colar porque a pressa de te chamar de minha era maior. E, quando finalmente escolhi as alianças, decidi que você seria o meu sempre. Sempre você. Sempre por você.",
-    photos: [moment3, moment2, moment1],
+    photos: [pedido1.url, pedido2.url, pedido3.url, pedido4.url, pedido5.url, pedido6.url, pedido7.url],
   },
   {
     title: "Primeira Viagem",
