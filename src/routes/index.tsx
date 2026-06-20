@@ -3,6 +3,7 @@ import { Heart } from "lucide-react";
 import { CoupleHero } from "@/components/CoupleHero";
 import { Timeline } from "@/components/Timeline";
 import { Soundtrack } from "@/components/Soundtrack";
+import { OurVideo } from "@/components/OurVideo";
 import { Secrets } from "@/components/Secrets";
 import { couple } from "@/lib/couple-data";
 
@@ -25,6 +26,7 @@ export const Route = createFileRoute("/")({
 function Nav() {
   const links = [
     { href: "#historia", label: "História" },
+    { href: "#video", label: "Vídeo" },
     { href: "#trilha", label: "Trilha" },
     { href: "#segredos", label: "Segredos" },
   ];
@@ -66,6 +68,7 @@ function Index() {
       <Nav />
       <CoupleHero />
       <Timeline />
+      <OurVideo />
       <Soundtrack />
       <Secrets />
       <Footer />
