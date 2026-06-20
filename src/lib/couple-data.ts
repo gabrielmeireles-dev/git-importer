@@ -38,6 +38,16 @@ import dias4 from "@/assets/dias-4.jpg.asset.json";
 import dias5 from "@/assets/dias-5.jpg.asset.json";
 import dias6 from "@/assets/dias-6.jpg.asset.json";
 import dias7 from "@/assets/dias-7.jpg.asset.json";
+import viagem1 from "@/assets/viagem-1.jpg.asset.json";
+import viagem2 from "@/assets/viagem-2.jpg.asset.json";
+import viagem3 from "@/assets/viagem-3.jpg.asset.json";
+import viagem4 from "@/assets/viagem-4.jpg.asset.json";
+import viagem5 from "@/assets/viagem-5.jpg.asset.json";
+import viagem6 from "@/assets/viagem-6.jpg.asset.json";
+import viagem7 from "@/assets/viagem-7.jpg.asset.json";
+import viagem8 from "@/assets/viagem-8.jpg.asset.json";
+import viagem9 from "@/assets/viagem-9.jpg.asset.json";
+import viagem10 from "@/assets/viagem-10.jpg.asset.json";
 import dias8 from "@/assets/dias-8.jpg.asset.json";
 import dias9 from "@/assets/dias-9.jpg.asset.json";
 import dias10 from "@/assets/dias-10.jpg.asset.json";
@@ -112,7 +122,7 @@ export const timeline: TimelineItem[] = [
     date: "09 DE ABRIL, 2026",
     description:
       "Nossa primeira viagem foi um marco importante para nós. Foi a primeira vez que você viu como seria passar um final de semana inteirinho ao meu lado. E, por incrível que pareça, você não desistiu de mim depois daquilo! Fiquei muito feliz por você ter ido, por ter gostado e, principalmente, por ter conhecido a minha família e se aproximado de pessoas tão importantes para mim. No final das contas, sei que a viagem também teve os seus momentos complicados, que acabaram trazendo novas dúvidas, mas, no balanço geral, foi incrível compartilhar essa experiência com você.",
-    photos: [moment1, moment2, moment3],
+    photos: [viagem1.url, viagem2.url, viagem3.url, viagem4.url, viagem5.url, viagem6.url, viagem7.url, viagem8.url, viagem9.url, viagem10.url],
   },
   {
     title: "Para sempre",
