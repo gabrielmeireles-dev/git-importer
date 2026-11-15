@@ -42,7 +42,7 @@ export function CoupleHero() {
           </h1>
           <p className="mt-6 max-w-md text-lg text-muted-foreground">{couple.tagline}</p>
           <p className="mt-2 text-sm uppercase tracking-[0.3em] text-muted-foreground">
-            DESDE 09/12/2024
+            DESDE 09/12/2024&ATÉ 11/10/2026
           </p>
 
           <div className="mt-10 grid grid-cols-4 gap-3 sm:gap-4">
