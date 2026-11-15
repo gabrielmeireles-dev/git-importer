@@ -71,6 +71,7 @@ export const couple = {
   name1: "Gabriel",
   name2: "Amanda",
   startDate: "2024-12-09T00:00:00", // AAAA-MM-DDTHH:mm:ss
+  endDate: "2026-10-11",
   tagline: "A nossa história, escrita a dois.",
 };
 

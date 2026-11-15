@@ -8,3 +8,6 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Calculate the memorial counter from date-only endpoints in a pure helper, not the current clock, to keep it stable across timezones and SSR.
+- Keep the closing letter in its own section immediately after the timeline, so its paragraphs remain separate from photo entries.

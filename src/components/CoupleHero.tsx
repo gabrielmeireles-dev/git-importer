@@ -1,27 +1,10 @@
-import { useEffect, useState } from "react";
 import { Heart } from "lucide-react";
 import heroImg from "@/assets/couple-hero.jpg.asset.json";
 import { couple } from "@/lib/couple-data";
-
-function diff(start: Date) {
-  const now = new Date();
-  let ms = Math.max(0, now.getTime() - start.getTime());
-  const days = Math.floor(ms / 86_400_000); ms -= days * 86_400_000;
-  const hours = Math.floor(ms / 3_600_000); ms -= hours * 3_600_000;
-  const minutes = Math.floor(ms / 60_000); ms -= minutes * 60_000;
-  const seconds = Math.floor(ms / 1000);
-  return { days, hours, minutes, seconds };
-}
+import { relationshipDuration } from "@/lib/relationship-duration";
 
 export function CoupleHero() {
-  const start = new Date(couple.startDate);
-  const [t, setT] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  useEffect(() => {
-    setT(diff(start));
-    const id = setInterval(() => setT(diff(start)), 1000);
-    return () => clearInterval(id);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const t = relationshipDuration(couple.startDate, couple.endDate);
 
   const stats = [
     { label: "dias", value: t.days },
@@ -41,9 +24,21 @@ export function CoupleHero() {
             {couple.name2}
           </h1>
           <p className="mt-6 max-w-md text-lg text-muted-foreground">{couple.tagline}</p>
-          <p className="mt-2 text-sm uppercase tracking-[0.3em] text-muted-foreground">
-            DESDE 09/12/2024&ATÉ 11/10/2026
-          </p>
+          <div className="mt-8 flex max-w-md items-center gap-4 border-y border-border py-5 sm:gap-6">
+            <div className="shrink-0">
+              <p className="text-xs uppercase text-muted-foreground">Desde</p>
+              <time dateTime={couple.startDate.slice(0, 10)} className="mt-1 block font-display text-2xl text-foreground sm:text-3xl">09/12/2024</time>
+            </div>
+            <div className="flex flex-1 items-center gap-2 text-rose" aria-hidden="true">
+              <span className="h-px flex-1 bg-border" />
+              <Heart className="h-4 w-4 shrink-0" />
+              <span className="h-px flex-1 bg-border" />
+            </div>
+            <div className="shrink-0 text-right">
+              <p className="text-xs uppercase text-muted-foreground">Até</p>
+              <time dateTime={couple.endDate} className="mt-1 block font-display text-2xl text-foreground sm:text-3xl">11/10/2026</time>
+            </div>
+          </div>
 
           <div className="mt-10 grid grid-cols-4 gap-3 sm:gap-4">
             {stats.map((s) => (

@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Heart } from "lucide-react";
 import { CoupleHero } from "@/components/CoupleHero";
 import { Timeline } from "@/components/Timeline";
+import { ForeverLetter } from "@/components/ForeverLetter";
 import { Soundtrack } from "@/components/Soundtrack";
 import { OurVideo } from "@/components/OurVideo";
 import { Secrets } from "@/components/Secrets";
@@ -18,6 +19,8 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:title", content: `${couple.name1} & ${couple.name2}` },
       { property: "og:description", content: "Nossa história, nossa trilha sonora e nossos segredos." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -68,6 +71,7 @@ function Index() {
       <Nav />
       <CoupleHero />
       <Timeline />
+      <ForeverLetter />
       <OurVideo />
       <Soundtrack />
       <Secrets />

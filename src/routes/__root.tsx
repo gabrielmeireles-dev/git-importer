@@ -6,6 +6,7 @@ import {
   useRouter,
   HeadContent,
   Scripts,
+  type ErrorComponentProps,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
@@ -34,7 +35,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: ErrorComponentProps) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -77,18 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Our Storybook creates a modern, interactive, and romantic website for couples." },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Our Storybook creates a modern, interactive, and romantic website for couples." },
+      { title: "Gabriel & Amanda — Nossa História" },
+      { name: "description", content: "As lembranças, músicas e sentimentos da história de Gabriel e Amanda." },
+      { property: "og:title", content: "Gabriel & Amanda — Nossa História" },
+      { property: "og:description", content: "As lembranças, músicas e sentimentos da história de Gabriel e Amanda." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "Lovable App" },
-      { name: "twitter:description", content: "Our Storybook creates a modern, interactive, and romantic website for couples." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d372d109-cb2a-4b59-895d-e3a3ed7b37fd/id-preview-b6884112--b684da88-70e3-450a-98ab-c30591303c8b.lovable.app-1781897245478.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d372d109-cb2a-4b59-895d-e3a3ed7b37fd/id-preview-b6884112--b684da88-70e3-450a-98ab-c30591303c8b.lovable.app-1781897245478.png" },
+      { name: "twitter:title", content: "Gabriel & Amanda — Nossa História" },
+      { name: "twitter:description", content: "As lembranças, músicas e sentimentos da história de Gabriel e Amanda." },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
